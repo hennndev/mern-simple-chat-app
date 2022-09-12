@@ -6,7 +6,7 @@ import { useLocation, useNavigate } from 'react-router-dom'
 import { Card, Typography, Input, Modal, Button } from 'antd'
 import { MoreOutlined, SendOutlined } from '@ant-design/icons'
 const { Text, Title } = Typography
-let socket = io.connect('http://localhost:5000')
+let socket = io.connect('https://mern-socket-simple-chat.herokuapp.com/')
 
 const Chat = () => {
 
