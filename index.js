@@ -9,7 +9,7 @@ const app = express()
 app.use(cors())
 const server = http.createServer(app)
 const io = new Server(server, {
-    cors: 'http://localhost:3000',
+    cors: 'https://mern-socket-simple-chat.herokuapp.com',
     methods: ['POST', 'GET']
 })
 
@@ -59,4 +59,4 @@ io.on('connection', (socket) => {
     })
 })
 
-server.listen(5000, () => console.log('Server has connected'))
+server.listen(process.env.PORT || 5000, () => console.log('Server has connected'))
