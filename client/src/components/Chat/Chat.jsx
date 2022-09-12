@@ -63,7 +63,7 @@ const Chat = () => {
                     </Button>,
                     <ButtonLeave
                       key="link"
-                      href="http://localhost:3000"
+                      href="https://mern-socket-simple-chat.herokuapp.com"
                       type="primary"
                     >
                       Leave Room
